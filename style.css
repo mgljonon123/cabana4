@@ -1,0 +1,877 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0c0c0d;
+  padding: 0 20px;
+}
+.menu-desktop {
+  width: 100%;
+  height: 66px;
+  display: none;
+  justify-content: center;
+  margin-top: 40px;
+  display: none;
+  top: 10px;
+}
+.menu-desktop nav {
+  width: 700px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 15px 15px 26px;
+  border: 1px solid #222226;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+.menu-desktop nav img {
+  width: 86px;
+  height: 26px;
+}
+.menu-desktop nav .items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-left: 1px solid #222226;
+  height: 100%;
+  align-items: center;
+  padding-left: 20px;
+}
+.menu-desktop nav .items p {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+}
+.menu-desktop nav button {
+  width: 116px;
+  height: 36px;
+  /* padding: 16px 18px; */
+  background-color: #8b5cf6;
+  border: 1px solid #8b5cf6;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+}
+
+.menu {
+  width: 100%;
+  height: 8vh;
+  display: block;
+  background-color: #0c0c0d91;
+  position: fixed;
+  top: 0px;
+}
+.menu nav {
+  width: 100%;
+  height: 100%;
+  padding: 16px 10px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu nav .logo img {
+  width: 86px;
+  height: 24px;
+}
+.menu nav button {
+  width: 105px;
+  border-radius: 20px;
+  color: white;
+  background-color: #8b5cf6;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75em;
+  border: 1px solid #8b5cf6;
+  font-weight: 600;
+}
+.first-text {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.first-text .text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 50px;
+}
+.first-text .text h1 {
+  font-size: 50px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+}
+.first-text h1 .pink {
+  color: #8b5cf6;
+  flex-direction: row;
+}
+.second-text {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-text .text {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.second-text p {
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  color: #b9bbc1;
+  line-height: 35px;
+}
+.button-1 {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-1 .buttons {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.button-1 .buttons button {
+  width: 234px;
+  height: 48px;
+  background-color: #8b5cf6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 50px;
+  border: 1px solid #8b5cf6;
+}
+.trusted-sponsors {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+}
+.trusted-sponsors .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.trusted-sponsors .content p {
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  font-size: 14px;
+}
+.question {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.question .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.question .content h2 {
+  font-size: 42px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+.question .content p {
+  color: #80858f;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.cards {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.cards .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.cards .content .group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cards .content .group .card {
+  width: 100%;
+  height: fit-content;
+  border: 1px solid #222226;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #141415;
+  border-radius: 5px;
+}
+.cards .content .group .card .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cards .content .group .card .text h3 {
+  font-family: "DM Sans", sans-serif;
+  color: #c4b5fd;
+}
+.cards .content .group .card .text p {
+  color: #b9bbc1;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+}
+.link {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.link .group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.question-2 {
+  width: 100%;
+  height: 32vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.question-2 .content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question-2 .content h2 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 42px;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+.question-2 .content p {
+  width: 100%;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  color: #80858f;
+  padding: 25px;
+}
+.question-2 .content p span {
+  color: white;
+}
+
+.Introduction-video {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  margin-top: 100px;
+}
+.Introduction-video video {
+  width: 100%;
+  height: 100%;
+}
+
+.trusted-developers {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+.trusted-developers .content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.trusted-developers .content h2 {
+  font-size: 42px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.trusted-developers .content h2 span {
+  color: #8b5cf6;
+}
+.trusted-developers .content .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.trusted-developers .content .cards .groups {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.trusted-developers .content .cards .groups .group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.trusted-developers .content .cards .groups .group .card {
+  width: 100%;
+  height: fit-content;
+  gap: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #222226;
+  border-radius: 20px;
+}
+.trusted-developers .content .cards .groups .group .card .comment {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  text-align: start;
+  font-weight: 400;
+}
+.trusted-developers .content .cards .groups .group .card .profile {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.trusted-developers .content .cards .groups .group .card .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+.trusted-developers .content .cards .groups .group .card .profile .about {
+  display: flex;
+  flex-direction: column;
+}
+.trusted-developers .content .cards .groups .group .card .profile .about .name {
+  color: white;
+  text-align: start;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+}
+.trusted-developers .content .cards .groups .group .card .profile .about .nick {
+  color: #80858f;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+}
+.trusted-developers .content .cards .card1 {
+  width: 100%;
+  height: fit-content;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #222226;
+  border-radius: 20px;
+  gap: 50px;
+}
+.trusted-developers .content .cards .card1 .comment {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  text-align: start;
+  font-weight: 400;
+}
+.trusted-developers .content .cards .card1 .profile {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.trusted-developers .content .cards .card1 .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+.trusted-developers .content .cards .card1 .profile .about {
+  display: flex;
+  flex-direction: column;
+}
+.trusted-developers .content .cards .card1 .profile .about .name {
+  color: white;
+  text-align: start;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+}
+.trusted-developers .content .cards .card1 .profile .about .nick {
+  color: #80858f;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+}
+.third-text {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.third-text .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.third-text .content p {
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  color: #80858f;
+}
+.third-text .content img {
+  width: 70px;
+  height: 32px;
+}
+.pricing {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 120px 0 60px;
+  gap: 50px;
+}
+.pricing .group1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10px;
+  align-items: center;
+}
+.pricing .group1 h2 {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+}
+.pricing .group1 .button {
+  width: 255px;
+  height: 47px;
+  padding: 6px;
+  background-color: #18181b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #222226;
+}
+.pricing .group1 .button .left {
+  width: 126px;
+  height: 35px;
+  background-color: #8b5cf6;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.pricing .group1 .button .left p {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  font-weight: 600;
+}
+.pricing .group1 .button .right {
+  width: 109px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 20px;
+}
+.pricing .group1 .button .right p {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  font-weight: 600;
+}
+.pricing .group2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.pricing .group2 .price {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 32px 32px;
+  background-color: #141415;
+  border: 1px solid #8b5cf6;
+  border-radius: 25px;
+  gap: 10px;
+}
+.pricing .group2 .price .title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pricing .group2 .price .title p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  color: #8b5cf6;
+}
+.pricing .group2 .price .title h2 {
+  font-size: 70px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+.pricing .group2 .price .info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.pricing .group2 .price .info p {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+}
+.pricing .group2 .price .info .pink {
+  color: #8b5cf6;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+}
+.pricing .group2 .price button {
+  height: 48px;
+  border: 1px solid #8b5cf6;
+  border-radius: 25px;
+  background-color: #8b5cf6;
+  font-size: 14px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 20px;
+}
+.pricing .group2 .price .list {
+  padding: 0 30px;
+}
+.pricing .group2 .price .list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.pricing .group2 .price .list ul li {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+}
+.lock {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.lock .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.lock .content p {
+  font-size: 12px;
+  color: #80858f;
+  font-family: "DM Sans", sans-serif;
+}
+.lock .content p span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  color: #b9bbc1;
+}
+.questions {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.questions .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.questions .content h2 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+}
+.questions .content .texts {
+  width: 100%;
+  border-top: 1px solid #18181b;
+  border-bottom: 1px solid #18181b;
+  display: flex;
+  flex-direction: column;
+}
+.questions .content .texts .text {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #222226;
+  justify-content: space-between;
+}
+.questions .content .texts .text p {
+  width: 90%;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+}
+.footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.footer .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer .content .group1 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer .content .group1 img {
+  width: 116px;
+  height: 30px;
+}
+.footer .content .group1 .credit {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .content .group1 .credit p {
+  color: #b9bbc1;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+.footer .content .group1 .credit p span {
+  color: white;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+.footer .content .group2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .content .group2 p {
+  color: white;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+}
+@media screen and (min-width: 420px) {
+  .trusted-developers .content .cards .groups .group .card {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .first-text .text h1 {
+    width: 500px;
+  }
+  .second-text .text p {
+    width: 500px;
+  }
+  .Introduction-video video {
+    width: 800px;
+    height: 450px;
+  }
+  .trusted-developers .content .cards .groups .group .card {
+    width: 400px;
+  }
+  .trusted-developers .content .cards .card1 {
+    width: 600px;
+    height: 170px;
+    background-color: #141415;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .trusted-developers .content .cards .card1 .comment {
+    width: 321px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .first-text .text h1 {
+    width: 700px;
+    font-size: 58px;
+  }
+  .second-text .text p {
+    width: 700px;
+    font-size: 20px;
+  }
+  .question .content h2 {
+    width: 900px;
+    font-size: 48px;
+  }
+  .question .content p {
+    width: 720px;
+    font-size: 18px;
+  }
+  .cards .content {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+  }
+  .cards .content .group {
+    display: flex;
+    flex-direction: row;
+  }
+  .question-2 .content h2 {
+    width: 900px;
+    font-size: 48px;
+  }
+  .question-2 .content p {
+    width: 720px;
+  }
+  .trusted-developers .content h2 {
+    width: 900px;
+    font-size: 48px;
+  }
+  .pricing .group1 h2 {
+    width: 900px;
+    font-size: 48px;
+  }
+  .pricing .group2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .questions .content {
+    width: 900px;
+  }
+  .questions .content .texts {
+    padding: 24px 16px 32px;
+    border-radius: 20px;
+    border: 1px solid #18181b;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-desktop {
+    display: flex;
+    position: fixed;
+  }
+  .menu {
+    display: none;
+  }
+  .first-text {
+    margin-top: 100px;
+  }
+  .first-text .text h1 {
+    width: 900px;
+    font-size: 90px;
+    line-height: 100px;
+  }
+  .question .content h2 {
+    font-size: 70px;
+  }
+  .question .content p {
+    font-size: 20px;
+  }
+  .cards .content .group {
+    width: 1000px;
+  }
+  .cards .content .group .card {
+    height: 170px;
+    padding: 30px;
+  }
+  .cards .content .group .card .text h3 {
+    font-size: 20px;
+  }
+  .cards .content .group .card .text p {
+    font-size: 16px;
+  }
+  .question-2 .content h2 {
+    font-size: 70px;
+  }
+  .trusted-developers .content .cards .groups {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .trusted-developers .content {
+    width: 1000px;
+  }
+  .trusted-developers .content h2 {
+    font-size: 70px;
+  }
+  .trusted-developers .content .cards .groups .group {
+    width: 388px;
+  }
+  .trusted-developers .content .cards .card1 {
+    width: 800px;
+  }
+  .trusted-developers .content .cards .card1 .comment {
+    width: 440px;
+  }
+  .pricing {
+    align-items: center;
+  }
+  .pricing .group2 {
+    width: 1200px;
+  }
+  .questions .content h2 {
+    font-size: 70px;
+  }
+  .footer {
+    height: fit-content;
+    padding: 20px;
+  }
+  .footer .content {
+    display: flex;
+    flex-direction: row;
+  }
+}
